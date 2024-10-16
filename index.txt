@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Audio Manager</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .button-download {
+            background-color: #858585;
+            color: #fff;
+        }
+
+        .button-play {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .button-delete {
+            background-color: #780320;
+            color: #fff;
+        }
+
+        .button-visualize {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .button-waveform {
+            background-color: #2196F3;
+            color: #fff;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Test Device</h1>
+
+        <!-- Test Sound -->
+        <h2>Test Sound</h2>
+        <a href="/download_test_sound"><button class="button button-download">Download Test Sound</button></a>
+        <a href="/play_test_sound"><button class="button button-play">Play Test Sound</button></a>
+        <a href="/visualize_test_sound"><button class="button button-visualize">Visualize Test Sound</button></a>
+        <a href="/waveform_test_sound"><button class="button button-waveform">Waveform Test Sound</button></a>
+        <a href="/delete_test_sound"><button class="button button-delete">Delete Test Sound</button></a>
+
+        <!-- ESP Mic 1 -->
+        <h2>ESP Mic 1</h2>
+        <a href="/download_espmic1"><button class="button button-download">Download ESP Mic 1</button></a>
+        <a href="/play_espmic1"><button class="button button-play">Play ESP Mic 1</button></a>
+        <a href="/visualize_espmic1"><button class="button button-visualize">Visualize ESP Mic 1</button></a>
+        <a href="/waveform_espmic1"><button class="button button-waveform">Waveform ESP Mic 1</button></a>
+        <a href="/delete_espmic1"><button class="button button-delete">Delete ESP Mic 1</button></a>
+
+        <!-- ESP Mic 2 -->
+        <h2>ESP Mic 2</h2>
+        <a href="/download_espmic2"><button class="button button-download">Download ESP Mic 2</button></a>
+        <a href="/play_espmic2"><button class="button button-play">Play ESP Mic 2</button></a>
+        <a href="/visualize_espmic2"><button class="button button-visualize">Visualize ESP Mic 2</button></a>
+        <a href="/waveform_espmic2"><button class="button button-waveform">Waveform ESP Mic 2</button></a>
+        <a href="/delete_espmic2"><button class="button button-delete">Delete ESP Mic 2</button></a>
+
+        <!-- Phone Mic -->
+        <h2>Phone Mic</h2>
+        <a href="/download_phonemic"><button class="button button-download">Download Phone Mic</button></a>
+        <a href="/play_phonemic"><button class="button button-play">Play Phone Mic</button></a>
+        <a href="/visualize_phonemic"><button class="button button-visualize">Visualize Phone Mic</button></a>
+        <a href="/waveform_phonemic"><button class="button button-waveform">Waveform Phone Mic</button></a>
+        <a href="/delete_phonemic"><button class="button button-delete">Delete Phone Mic</button></a>
+    </div>
+</body>
+</html>
